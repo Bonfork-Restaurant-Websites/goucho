@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A demo website for the Goucho Restaurant Template" />
+    <meta name="keywords" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://goucho.bonfork.net/" />
+    <meta property="og:title" content="Goucho Restaurant" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="A demo website for the Goucho Restaurant Template" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com/">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com/">
+    <!--
+    ____   __   __ _  ____  __  ____  __ _
+    (  _ \ /  \ (  ( \(  __)/  \(  _ \(  / )
+    ) _ ((  O )/    / ) _)(  O ))   / )  (
+    (____/ \__/ \_)__)(__)  \__/(__\_)(__\_)
+    -->
+    <title>Goucho</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hp-video.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+
+    <!-- Schema json -->
+    <script id="data" type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Restaurant",
+          "priceRange": "$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "addressCountry": "Canada",
+            "postalCode": "M5E 1Z9",
+            "streetAddress": "12 Yonge St."
+          },
+          "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 43.643162,
+              "longitude": -79.376259
+          },
+          "name": "Goucho Restaurant",
+          "telephone": "+44 (0)1234 56789",
+          "url": "https://goucho.bonfork.net",
+          "paymentAccepted": "",
+          "description": "Goucho Restaurant Demo description. Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam id urna egestas ultricies nulla at viverra nibh donec sollicitudin metus sit amet est laoreet gravida donec cursus enim quis.",
+        
+          "servesCuisine": "French cuisine",
+          "hasMenu": "https://goucho.bonfork.net/menu",
+          "acceptsReservations": "True",
+          
+          "openingHoursSpecification": [
+              {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday",
+                      "Saturday"
+                  ],
+                  "opens": "11:00",
+                  "closes": "23:00",
+                  "is_open": true
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Sunday"
+                ],
+                "opens": "11:00",
+                "closes": "23:00",
+                "is_open": false
+            }
+          ]
+      }
+  </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=ID_PROPERTY_HERE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'ID_PROPERTY_HERE');
+    </script>
+</head>
+
+<body>
+    <header>
+        <video class="video" autoplay muted loop id="myVideo">
+            <source src="images/video-bg.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+        </video>
+        <canvas class="canvas"></canvas>
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#" title="Go to home"></a>
+            <button class="header__menu-button header-button" type="button">
+                <span class="top-bar mr-0 ml-auto"></span>
+                <span class="middle-bar mr-0 ml-auto"></span>
+                <span class="bottom-bar mr-0 ml-auto"></span>
+            </button>
+            <div class="header__overlay"></div>
+            <div class="menu-panel header__menu">
+                <div class="menu-panel__inner">
+                    <button class="header__menu-button header__menu-button_fixed mr-0 ml-auto toggle-button" type="button">
+                        <span class="top-bar mr-0 ml-auto"></span>
+                        <span class="middle-bar mr-0 ml-auto" style="background: #000;"></span>
+                        <span class="bottom-bar mr-0 ml-auto"></span>
+                    </button>
+                    <div class="menu-panel__menu mt-5">
+                        <div class="menu-panel__menu-item">
+                            <a class="menu-panel__menu-link menu-panel__menu-link_active" href="index.html" title="Home">Home</a>
+                        </div>
+                        <div class="menu-panel__menu-item">
+                            <a class="menu-panel__menu-link" href="story.html" title="Our Story">Our Story</a>
+                        </div>
+                        <div class="menu-panel__menu-item">
+                            <a class=" menu-panel__menu-link " href="menu.html" title="Our Menu">Our Menu</a>
+                        </div>
+                        <div class="menu-panel__menu-item">
+                            <a class="menu-panel__menu-link " href="gallery.html" title="Gallery">Gallery</a>
+                        </div>
+                        <div class="menu-panel__menu-item">
+                            <a class="menu-panel__menu-link " href="contact.html" title="Contact us">Contact us</a>
+                        </div>
+                    </div>
+                    <div class="menu-panel__footer">
+                        <div class="menu-panel__bottom">
+                            <div class="menu-panel__socials">
+                                <a href="#" title="Follow on Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" title="Follow on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" title="Follow on Google Plus">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <h1>
+                Eat Socialize Drink
+            </h1>
+
+            <div class="address">
+                <h6>12 yonge street</h6>
+                <h6>
+                    <a href="tel:(647) 209-2910" title="Phone Number">(647) 209-2910</a>
+                </h6>
+            </div>
+        </div>
+    </header>
+
+    <section class="info">
+        <div class="container">
+            <h3>
+                We are committed to delivering the best possible service and facilities for our customers in the best possible conditions
+                so that they can enjoy the best Brazilian food and drink.
+            </h3>
+        </div>
+    </section>
+
+    <section class="our-menu">
+        <div class="menu-header">
+            <div class="container">
+                <a href="menu.html" title="Explore our menu">explore our menu</a>
+            </div>
+        </div>
+
+        <div class="row no-gutters">
+            <div class="col-4">
+                <img src="images/image-1.jpg" class="img-fluid w-100 h-100" alt="Menu Image">
+            </div>
+            <div class="col-4">
+                <img src="images/image-2.jpg" class="img-fluid w-100 h-100" alt="Menu Image">
+            </div>
+            <div class="col-4">
+                <img src="images/image-3.jpg" class="img-fluid w-100 h-50" alt="Menu Image">
+                <img src="images/image-4.jpg" class="img-fluid w-100 h-50" alt="Menu Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials text-center">
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="images/testimonials.png" alt="Quote icon" class="img-fluid">
+                    <p>
+                        This was our fifth visit to the Goucho and definitely will not be our last. Each time we visit the service is beyond reproach
+                        and it would be hard to make it any better.
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/testimonials.png" alt="Quote icon" class="img-fluid">
+                    <p>
+                        In the busy downtown near a lot of other sites and amenities, this modern style restaurant is a meat lovers dream (vegetarians
+                        could come but may not feel that the price point was fair).
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/testimonials.png" alt="Quote icon" class="img-fluid">
+                    <p>
+                        Food is fantastic... even if you don't eat steak... like me .... they do chicken/salmon/prawns. Great selection of salads
+                        etc. Saturday night is best night as the dancers are there and they really add to the experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="row no-gutters">
+            <div class="col-lg-7 mb-4">
+                <div class="content">
+                    <h2 class="has-top-line">Welcome to the
+                        <strong>Goucho</strong> restaurant</h2>
+                    <p>
+                        Our focus is to create a relaxing yet energetic dining experience, and our team are always eager to learn about the latest
+                        and best in Brazilian cuisine, which you can then choose from order as a starter, main or dessert.
+                        Our menu is also constantly growing, with exciting new items being prepared on site every week. In
+                        addition, we have a huge selection of soft drinks, coffee, beer and wine to complement the restaurant.
+                    </p>
+                    <br>
+                    <p>
+                        We are dedicated to always providing the freshest and most innovative food and drink to our customers. We are committed to
+                        delivering the best possible service and facilities for our customers in the best possible conditions
+                        so that they can enjoy the best Italian food and drink. We have 3 floors with a little more space,
+                        as per our customers needs. The more space we have the more diners we can serve guests. Please note
+                        we currently have a busy pop up restaurant, which we are working on with our chef, which we will
+                        be opening in our new space soon.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 text-center text-lg-right">
+                <div class="reveal">
+                    <img src="images/about.jpg" alt="About Image" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <div class="text-center">
+            <img src="images/logo.svg" alt="Footer Logo" class="img-fluid footer-img">
+        </div>
+        <section class="contact">
+            <div class="container">
+                <span class="address">12 Yonge Street, Toronto / Unit 201 / Toronto, ON / M5K 2H2</span>
+
+                <div class="row contact-row">
+                    <div class="col-lg-8 mb-5">
+                        <div class="alert alert-worked" role="alert" id="alert">
+                            Thank you for contacting us! One of our staff will get back to you within 1 business day.
+                        </div>
+                        <div class="alert alert-not-worked" role="alert" id="alert">
+                            Something went wrong!
+                        </div>
+                        <form id="contact-form" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Your name*" required>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                            oninvalid="setCustomValidity('Please enter a valid email address!')" onchange="setCustomValidity('')"
+                                            required>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your phone*" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <textarea class="form-control" name="message" id="message" placeholder="Your message*" required></textarea>
+                                    <button type="submit" class="btn btn-submit">Send Message</button>
+                                </div>
+                            </div>
+
+                                             </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="mailto:info@elgouchorestaurant.com" title="Email us">info@elgouchorestaurant.com</a>
+                        <br>
+                        <a href="tel:(416) 982-2901" title="Call us">(416) 982-2901</a>
+                        <br>
+                        <span>
+                            <a href="https://www.facebook.com/Bonfork-Restaurant-Websites-104298377890763" title="Facebook Link">Facebook /</a>
+                            <a href="https://twitter.com/_Bonfork_" title="Twitter Link">Twitter</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left">
+                        <span class="copyright-text">&copy;
+                            <span id="year"></span> Privacy Copyright - All rights reserved by Goucho Restaurant</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <span class="website-by">Restaurant Website by
+                            <a href="https://bonfork.com/" title="Bonfork">Bonfork</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/canvas-video-player.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+
+        $('.about').waypoint(function () {
+            $(".reveal").addClass("show");
+        }, {
+                offset: '65%'
+            });
+
+
+        // Canvas Video Player
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
+        if (isIOS) {
+
+            var canvasVideo = new CanvasVideoPlayer({
+                videoSelector: '.video',
+                canvasSelector: '.canvas',
+                timelineSelector: false,
+                autoplay: true,
+                makeLoop: true,
+                pauseOnClick: false,
+                audio: false
+            });
+
+        } else {
+
+            // Use HTML5 video
+            document.querySelectorAll('.canvas')[0].style.display = 'none';
+
+        }	
+    </script>
+</body>
+
+</html>
